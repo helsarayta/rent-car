@@ -18,10 +18,15 @@ public class CarDetail extends BaseEntity {
     private String brand;
     private String model;
     private String color;
+
     @ManyToOne
     private CarCategory carCategory;
+
     @ManyToOne
     private RentOffice rentOffice;
+
     @ManyToOne
+    @JoinColumn(name = "price_code", referencedColumnName = "code")
     private RentPrice priceCode;
+
 }
