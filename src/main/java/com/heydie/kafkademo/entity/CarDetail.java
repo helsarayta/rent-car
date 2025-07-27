@@ -22,4 +22,6 @@ public class CarDetail extends BaseEntity {
     private CarCategory carCategory;
     @ManyToOne
     private RentOffice rentOffice;
+    @ManyToOne
+    private RentPrice priceCode;
 }
